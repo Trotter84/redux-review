@@ -2,14 +2,16 @@
   "name": "redux-budget",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:wdjungst/final_review_f2018.git",
+  "repository": "git@github.com:Trotter84/redux-review.git",
   "author": "Daniel Trotter <flare84@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.18.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-redux": "^5.0.7",
     "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
     "styled-components": "^4.0.2"
   },
   "devDependencies": {
