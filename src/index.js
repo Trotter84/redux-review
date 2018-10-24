@@ -4,6 +4,10 @@ import App from './components/App'
 import { Provider } from 'react-redux'
 import store from './store'
 import { ThemeProvider } from 'styled-components'
+import { initMiddleware } from 'devise-axios'
+import { BrowserRouter } from 'react-router-dom'
+
+initMiddleware()
 
 const theme = {
   blue: '#B0E2FF',
@@ -13,9 +17,11 @@ const theme = {
 
 ReactDOM.render(
   <Provider store={store}>
-    <ThemeProvider theme={theme}>
-      <App />
-    </ThemeProvider>
+    <BrowserRouter>
+      <ThemeProvider theme={theme}>
+        <App />
+      </ThemeProvider>
+    </BrowserRouter>
   </Provider>,
   document.getElementById('app')
 )
